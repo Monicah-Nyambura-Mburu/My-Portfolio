@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Css/color-1.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header"><img class="logo" src="./Images/download-removebg-preview.png" alt=""></a></li>
+                </ul>
+                
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3 class="hello">Hello, my name is <span class="name">Monicah Mburu.</span></h3>
+                 <h3 class="my-profession">I'm a <span class="typing">Front-end web developer.</span> </h3>
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/pic1.svg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am very passionate about the tech industry and would love to share my skills 
+                        and also learn more each day. I am confident about my potential and I work 
+                        very efficiently and above all I always deliver on time and my work is 
+                        commendable. I am great at time keeping and also I am known as a great 
+                        team leader. I am ethical and very dedicated to my work. I love what I do 
+                        above everything else.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end Web Development</li>
+                            <li><span>Web Design</span><br>UI/UX Designer</li>
+                            <li><span>Writer</span><br>Blog Writer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Internship at Design Hub</li>
+                            <li><span>2022</span><br>Diploma in Web Development</li>
+                            <li><span>2021</span><br>Certificate of Graphic Design</li>
+                            <li><span>2016-2019</span><br>Kenya Certificate of Secondary School</li>
+                        </ul>
+                    </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>NairoBits School of Design</li>
+                                <li><span>2021</span><br>NairoBits School of Design</li>
+                                <li><span>2016-2019</span><br>Kamandura Girls High School</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Web developers create and maintain websites. They are also
+                         responsible for the site's technical aspects, such as its performance
+                          and capacity, which are measures of a website's speed and how 
+                          much traffic the site can handle. In addition, web developers may 
+                          create content for the site.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-pen"></i>
+                    <h2>Writing</h2>
+                    <p>
+                        I am very good at writing, editing, posting, and promoting contents on web pages or websites. I am also able to generate and pitch ideas, compose and edit posts, market posts to readers, and conduct research.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Images/netflix clone.jpg" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>This is basically a replica of the netflix app. Which I challenged myself to clone using Html, Css and Javascript.
+                        </p>
+                        <a href="https://bucolic-blancmange-b203af.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/Shoes.jpg" alt="">
+                    <div class="layer">
+                        <h3>Shoe Store</h3>
+                        <p>This is an e-commerce shoe app. It is a store app where customers can order there shoes online and it will be delivered at there doorstep.
+                        </p>
+                        <a href="https://enchanting-mousse-bf0b33.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/food-logo-templates-cover.png" alt="">
+                    <div class="layer">
+                        <h3>Online Food Delivery Apps</h3>
+                        <p>This online app allows customers to order food online and it will be deliver to their doorstep.
+                        </p>
+                        <a href="https://aesthetic-queijadas-216656.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/Clothes.jpg" alt="">
+                    <div class="layer">
+                        <h3>Clothing Store</h3>
+                        <p>This is an online clothing store.
+                        </p>
+                        <a href="https://voluble-rabanadas-51502f.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/University-of-Nairobi-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>University Website</h3>
+                        <p>This school website shows about the university facilities and amenities.
+                        </p>
+                        <a href="https://tubular-naiad-c97afb.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/food-logo-templates-cover.png" alt="">
+                    <div class="layer">
+                        <h3>Online Food Delivery Apps</h3>
+                        <p>This online app allows customers to order food online and it will be deliver to their doorstep.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/220120-47456-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Instagram Clone</h3>
+                        <p>This is an Instagram Clone.
+                        </p>
+                        <a href="https://earnest-horse-e50718.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>
+                        </p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/food-logo-templates-cover.png" alt="">
+                    <div class="layer">
+                        <h3>Online Food Delivery Apps</h3>
+                        <p>This online app allows customers to order food online and it will be deliver to their doorstep.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/food-logo-templates-cover.png" alt="">
+                    <div class="layer">
+                        <h3>Online Food Delivery Apps</h3>
+                        <p>This online app allows customers to order food online and it will be deliver to their doorstep.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <!-- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> monicahmburu372@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0759323978</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://twitter.com/home?lang=en"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="./Images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- js  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.remove("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+       var sidemenu = document.getElementById("sidemenu");
+
+       function openmenu(){
+            sidemenu.style.right = "0";
+       }
+       function closemenu(){
+        sidemenu.style.right = "-200px";
+       }
+    </script>
+</body>
+</html>
